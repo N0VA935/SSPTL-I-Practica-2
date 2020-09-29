@@ -1,7 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Delgado Ramírez, José David
+ * Franco García, Hugo Israel
+ * arrayContainer.java
+ * 28/09/2020
+ * Descripcion:
+ * En base a un txt se compara el CODOP contra el TABOP para encontrar las relaciones
+ * y los datos que se asocian a este.
  */
 package Tools;
 
@@ -10,6 +14,7 @@ import java.util.ArrayList;
 /**
  *
  * @author José David Delgado Ramírez
+ * @author Hugo Israel Franco García
  */
 public class arrayContainer {
     // Creacion de arraylist para cargar las isntrucciones
@@ -90,6 +95,12 @@ public class arrayContainer {
             }
         }   // Fin de for de instruccion principal
     }   // Fin de metodo
+    /**
+     * Funcion booleana que indica si se encuentra una irregularidad en el operando, 
+     * devuelve false si se encuentra con alguna
+     * @param i -Pivote para la lista de partida del TABOP
+     * @param index -Indice de donde comienza a leer
+     */
     public static boolean correct(int index, int i){
         boolean check = true;
         String[] tOperando = INST.get(i).split("= ");   // Separa apartir de

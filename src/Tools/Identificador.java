@@ -1,7 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Delgado Ramírez, José David
+ * Franco García, Hugo Israel
+ * Identificador.java
+ * 28/09/2020
+ * Descripcion:
+ * En base a un txt se compara el CODOP contra el TABOP para encontrar las relaciones
+ * y los datos que se asocian a este.
  */
 package Tools;
 
@@ -14,6 +18,7 @@ import java.util.ArrayList;
 /**
  *
  * @author José David Delgado Ramírez
+ * @author Hugo Israel Franco García
  */
 public class Identificador {
     // Variables globales
@@ -104,7 +109,10 @@ public class Identificador {
         
         fr.close(); // Cierre de archivo
     }   // Fin de metodo
-    
+    /**
+     * Funcion para leer el TABOP y guardarlo en una arrayList
+     * @param txt -Fuente de donde se carga el TABOP
+     */
     private static void readerTabop(String txt) throws FileNotFoundException, IOException{
         String line;    // Variable para leer temporalmente las lineas del txt
         // Lectores para cargar el .txt
@@ -140,7 +148,7 @@ public class Identificador {
             }
         }
         fr.close(); // Cierre de archivo
-    }
+    }   // Fin de funcion
     /**
      * Funcion boleana para detectar un numero dentro de un string
      * @param line -String para la lectura de linea de texto
